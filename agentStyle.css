@@ -1,0 +1,40 @@
+.top-nav {
+    position: relative;
+    height: 60px;
+    line-height: 60px; /* יישור אנכי של הטקסט */
+    padding: 0 24px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-left {
+    position: absolute;
+    left: 24px;
+    top: 0;
+}
+
+.nav-center {
+    text-align: center; /* ממורכז באמצע הדף */
+}
+
+.nav-center a {
+    display: inline-block;
+    margin: 0 16px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.nav-right {
+    position: absolute;
+    right: 24px;
+    top: 0;
+}
+
+.nav-right .btn-text,
+.nav-right .btn-pill,
+.nav-right .btn-info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    /* עיצוב כפתורים ומרווחים */
+}
