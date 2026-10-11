@@ -1,40 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+}
+
+
 .top-nav {
-    position: relative;
-    height: 60px;
-    line-height: 60px; /* יישור אנכי של הטקסט */
-    padding: 0 24px;
-    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+    padding: 16px 36px;
+    background-color: #ffffff;
+}
+
+.top-nav::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .nav-left {
-    position: absolute;
-    left: 24px;
-    top: 0;
+    float: left;
+    line-height: 36px;
 }
 
+.brand {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+    display: inline-block;
+}
+
+.brand-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
 .nav-center {
-    text-align: center; /* ממורכז באמצע הדף */
+    float: left;
+    width: calc(100% - 460px);
+    text-align: center;
+    line-height: 36px;
 }
 
 .nav-center a {
-    display: inline-block;
-    margin: 0 16px;
+    color: #555555;
     text-decoration: none;
-    color: #555;
-    font-size: 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0 14px;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+.nav-center a:hover {
+    color: #000000;
 }
 
 .nav-right {
-    position: absolute;
-    right: 24px;
-    top: 0;
+    float: right;
+    line-height: 36px;
 }
 
-.nav-right .btn-text,
-.nav-right .btn-pill,
-.nav-right .btn-info {
+.btn-text {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 999px;
+    margin-right: 8px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 8px;
-    /* עיצוב כפתורים ומרווחים */
+}
+
+.btn-pill {
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 999px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.page-body {
+    width: 100%;
+    padding: 60px 40px;
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0; 
+}
+
+
+.left-col {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+    font-size: 1rem;
+    padding-right: 48px;
+}
+
+.main-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #0d0d0d;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4f4f4f;
+    margin-bottom: 24px;
+    max-width: 440px;
+}
+
+.availability {
+    font-size: 0.8rem;
+    color: #8e8e8e;
+    margin-bottom: 28px;
+}
+
+.btn-wrap {
+    display: block;
+}
+
+.btn-try {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 999px;
+}
+
+
+.right-col {
+    display: inline-block;
+    vertical-align: middle;
+    width: 52%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.blue-card {
+    display: inline-block;
+    width: 460px;
+    height: 480px;
+    max-width: 100%;
+    border-radius: 20px;
+    background: radial-gradient(circle at 75% 25%, #60a5fa 0%, #3b82f6 45%, #93c5fd 100%);
+    position: relative;
+    box-shadow: 0 16px 40px rgba(59, 130, 246, 0.25);
+    text-align: left;
+}
+
+
+.popup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 86%;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.popup-header {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.bulb-icon {
+    font-size: 1.1rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.popup-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #555555;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.popup-text {
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #333333;
 }
